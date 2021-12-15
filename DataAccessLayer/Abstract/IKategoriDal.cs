@@ -7,12 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IKategoriDal
+    public interface IKategoriDal:IGenericDal<Kategori>
     {
-        List<Kategori> KategorileriListele();
-        void kategoriEkle(Kategori kategori);
-        void kategoriSil(Kategori kategori);
-        void kategoriGuncelle(Kategori kategori);
-        Kategori idGetir(int id);
+
+
     }
 }
