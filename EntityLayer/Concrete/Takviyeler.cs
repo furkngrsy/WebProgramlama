@@ -11,15 +11,16 @@ namespace Entity.Concrete
     {
         [Key]
         public int TakviyeID { get; set; }
-        public string  TakviyeAd { get; set; }
+        public string TakviyeAd { get; set; }
         public int TakviyeFiyat { get; set; }
-        public string  TakviyeKucukFoto { get; set; }
+        public string TakviyeKucukFoto { get; set; }
         public string TakviyeFoto { get; set; }
         public string Marka { get; set; }
         public string TakviyeAroma { get; set; }
         public int TakviyeAdet { get; set; }
         public bool TakviyeDurum { get; set; }
-
-
+        public int KategoriID { get; set; }
+        public Kategori Kategori { get; set; }
+        public List<Yorumlar> Yorumlars { get; set; }
     }
 }

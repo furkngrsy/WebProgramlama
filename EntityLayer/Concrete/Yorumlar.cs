@@ -15,5 +15,7 @@ namespace Entity.Concrete
         public string YorumIcerik { get; set; }
         public DateTime YorumTarih { get; set; }
         public bool YorumDurum { get; set; }
+        public int TakviyeID { get; set; }
+        public Takviyeler Takviyeler { get; set; }
     }
 }

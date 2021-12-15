@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proje", "Proje\Proje.csproj", "{DDBF0E1F-4F42-41AE-B03C-60FAFAC4F3DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{79D117F0-82D8-4073-94B8-7B313450908F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "EntityLayer\Entity.csproj", "{79D117F0-82D8-4073-94B8-7B313450908F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{56595D60-9D5E-48D6-9E17-1024733B55D1}"
 EndProject

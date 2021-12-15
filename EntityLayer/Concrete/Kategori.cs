@@ -14,5 +14,6 @@ namespace Entity.Concrete
         public string KategoriAd { get; set; }
         public string KategoriAciklama { get; set; }
         public bool KategoriDurum { get; set; }
+        public List<Takviyeler> Takviyelers { get; set; }
     }
 }
