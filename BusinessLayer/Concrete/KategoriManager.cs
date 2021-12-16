@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using Entity.Concrete;
 using System;
@@ -11,36 +12,36 @@ namespace BusinessLayer.Concrete
 {
     public class KategoriManager : IKategoriServis
     {
-        EfKategoriRepository efKategoriRepository;
-
-        public KategoriManager()
+        IKategoriDal _kategoriDal;
+        public KategoriManager(IKategoriDal kategoriDal)
         {
-            efKategoriRepository = new EfKategoriRepository();
+            _kategoriDal = kategoriDal;
         }
+
         public Kategori idGetir(int id)
         {
-            return efKategoriRepository.idGetir(id);
+            return _kategoriDal.idGetir(id);
         }
 
         public void kategoriEkle(Kategori kategori)
         {
-            efKategoriRepository.Insert(kategori);
+            _kategoriDal.Insert(kategori);
 
         }
 
         public void kategoriGuncelle(Kategori kategori)
         {
-            efKategoriRepository.Update(kategori);
+            _kategoriDal.Update(kategori);
         }
 
         public void kategoriSil(Kategori kategori)
         {
-            efKategoriRepository.Delete(kategori);
+            _kategoriDal.Delete(kategori);
         }
 
         public List<Kategori> listeGetir()
         {
-            return efKategoriRepository.Listele();
+            return _kategoriDal.Listele();
         }
     }
 }

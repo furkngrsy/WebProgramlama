@@ -12,10 +12,25 @@ namespace DataAccessLayer.Repositories
     public class TakviyelerRepository : ITakviyelerDal
 
     {
+        public void Delete(Takviyeler g)
+        {
+            throw new NotImplementedException();
+        }
+
         public Takviyeler idGetir(int id)
         {
             using var ct = new Context();
             return ct.Takviyelers.Find(id);
+        }
+
+        public void Insert(Takviyeler g)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Takviyeler> Listele()
+        {
+            throw new NotImplementedException();
         }
 
         public void takviyeEkle(Takviyeler takviyeler)
@@ -43,6 +58,11 @@ namespace DataAccessLayer.Repositories
             using var ct = new Context();
             ct.Remove(takviyeler);
             ct.SaveChanges();
+        }
+
+        public void Update(Takviyeler g)
+        {
+            throw new NotImplementedException();
         }
     }
 }
